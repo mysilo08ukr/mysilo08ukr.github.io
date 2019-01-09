@@ -4,7 +4,7 @@ $(function () {
         navbar: {
             title: '<img src="img/Logo-Mysilo.png">'
         },
-
+        "pageScroll": true
 
     });
     var $icon = $(".hamburger");
@@ -28,6 +28,7 @@ $(function () {
             carouselService();
         }, 50)
     });
+
 
     $('.carousel-projects').owlCarousel({
         loop:true,
