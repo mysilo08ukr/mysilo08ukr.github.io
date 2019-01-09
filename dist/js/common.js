@@ -33,6 +33,7 @@ $(function () {
     $('.carousel-projects').owlCarousel({
         loop:true,
         nav:true,
+        dots:true,
         smartSpeed:800,
         responsiveClass:true,
         responsive:{
