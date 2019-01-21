@@ -97,5 +97,14 @@ $(function () {
             }
         }
     })
+    $('.carousel-projects__content').equalHeights();
 
+    $(".carousel-projects-item").each(function (i) {
+        $(this).find(".button").attr("href", '#project_' + i);
+        $(this).find(".elevator-description").attr("id", "project_" + i);
+    });
+
+    $(".popup").magnificPopup({type: "image"});
+    $(".popup_content").magnificPopup({type: "inline", midClick: true});
+    $(".popup_content_2").magnificPopup({type: "inline", midClick: true});
 });
